@@ -1,0 +1,19 @@
+loop trong khoảng (1,... N), cộng các số vào nếu như bằng => true, ko bằng => false
+giả dụ cộng  các số 1 lại với nhau, bao giờ tổng các số 1: sum(1) = n thì ta sẽ thêm 1 vòng điều kiện nữa để
+chia ra thành từng số odd tương ứng với k.
+
+
+Bài 673A
+loop từng element, check nếu ar[0] <= 15 => yes
+    
+    sau đó sẽ tính difference giữa arr[i] và arr[i + 1]: nếu như arr[i + 1] - arr[i] < 15 => continue
+        else arr[i+ 1] - arr[i] >= 15 => Tạo 1 biến var count dùng để
+- else: arr[0] 
+
+loop cả cái string, nếu như char random trùng với  char assign trước đó thì sẽ random lại 
+1 2 3 4 5 6
+1 2 1
+
+problem vest
+bước 1: loop trước find the difference của các desired vest trước: ai - x <= bj <= ai + x
+bước 2: nếu như số vest thỏa mãn khoảng trên thì count++ xong break cái loop đấy. Trong trường hợp n > m

@@ -1,0 +1,56 @@
+- Độ phức tạp thuật toán phụ thuộc time gồm 3 yếu tố:
+    - Algo
+    - Cấu hình
+    - Number of input
+    - Skill of programmer
+- 3 loại độ phức tạp thuật toán
+    - Big O (O): Độ phức tạp thuật toán trong trường hợp chạy chậm(xấu) nhất, được áp dụng nhiều nhất làm thước đo
+     sự hiệu quả thuật toán
+    - Big Theta: trong tgian trung bình, ta lấy trung bình tất cả thời gian thực thi của thuật toán trong mọi 
+    trường hợp. Thường khó để đánh giá chính xác. Tuy nhiên nếu ta đánh giá bằng Big O ko khả thi trong thực tiễn, ta có thể
+    đánh giá bằng Big Theta
+    - Big Omega: trong tgian nhanh nhất 
+
+- Các đơn vị đánh giá độ phức tạp thuật toán về tgian
+    a. Bằng hằng số O(1): 
+        - CHỉ được thực hiện trong hữu hạn số bước nhất định (số bước thực hiện là số nhỏ)
+        - Ví Dụ: kiểm tra độ dài 3 cạnh tam giác
+        - Dù input có như nào thì số bước thực hiện thuật toán vẫn là số nhỏ
+        - Ko tồn tại sản phẩm thực tế có độ phức tạp thuật toán là phức tạp hằng số, vì đa phần các sản phẩm cần nhiều bước thuật toán
+    b. Độ phức tạp logarit O(log(N)):
+        - Số bước thực thi tăng theo hàm logarit log(N) bước, nếu N = 100000, số bước để thực hiện vòng lặp là log(100000) = 20 bước
+        - Được ứng dụng nhiều vì số bước thực hiện ít
+        - 1 số thuật toán có độ phức tạp logarit:
+            - thuật toán tìm kiếm nhị phân
+            - cây nhị phân cân bằng 
+        - 1 số thuật toán thực tế:
+            - thuật toán tìm kiếm tài xế xe ôm (grab)
+            - Đo mắt cận
+            - Tìm bóng đèn bị hỏng trong mạc nối tiếp
+    c. Độ phức tạp tuyến tính
+        - là độ phức tạp tương ứng với những thuật toán có số lượng bước tăng tuyến tính theo input
+        - Tức là với input N = 10000, cần 10000 bước để kết thúc vòng lặp N
+        - 1 số thuật toán có độ phức tạp tuyến tính:
+            - TÌm số nguyên trong 1 chuỗi
+            - THuật toán so khớp chuỗi trong văn bản
+        - sản phẩm
+            - Thuật toán KMP
+            - Thuật toán DFS/BFS phân phối các chuyến bay
+            - Hiển thị các gợi ý trên thanh google
+    d. Độ phức tạp tuyến tính logarit (O(Nlog(N))):
+        - Gồm 2 vòng lặp lồng nhau, 1 vòng tuyến tính 1 vòng logarit
+        - Ví Dụ:
+            - Thuật toán quick sort
+            - Thuật toán Djsktra tối ưu bời hàng đợi ưu tiên
+    e. Độ phức tạp đa thức (O(N^c))
+        - Là độ phức tạp tương ứng với những thuật toán gồm c vòng lặp tuyến tính lồng nhau
+        - Ít được ứng dụng rộng rãi trong thực tế khi lập những dữ liệu lớn.
+- Tối ưu độ phức tạp thuật toán: giảm số bước thực hiện bài toán xuống nhưng mà vẫn ra kết quả chính xác
+- Nên đánh giá độ phức tạp thuật toán trc khi tung ra sản phẩm, ưu tiên thuật toán ít bước
+3. 1 số quy tắc đánh giá độ phức tạp thuật toán:
+    - Quy tắc hằng số: O(k.f(n)) = O(f(n)) với k là hằng số nhỏ
+        Ví dụ: O(2n+3) = O(n)
+    - Quy tắc cộng: O(f(n) + g(n)) = Max(O(f(n)), O(g(n))) -> lấy maxium thời gian giữa các thuật toán
+        Ví dụ: O(3n^2 + 2n + 5) = O(n^2)
+    - Quy tắc nhân: O(f(n) * g(n)) = O(f(n)) * O(g(n))
+

@@ -1,0 +1,3 @@
+Two pointer
+cho 2 bien chay song song loop 1 mảng, nếu i tịnh tiến và thỏa mãn điều kiện thù l sẽ đứng yên hoặc tịnh tiến
+Độ phức tạp: O(N)
